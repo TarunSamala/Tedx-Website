@@ -1,12 +1,8 @@
-'use client';
-import React from 'react'
-// import Timer from '/Timer.js'
+import React from "react";
 
 import { useEffect, useState, useMemo } from 'react'
 
-
-function Hero() {
-
+function Timers() {
   const [partyTime, setPartyTime] = useState(false);
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
@@ -42,14 +38,9 @@ function Hero() {
     return () => clearInterval(interval);
   }, []);
 
-
-
-
   return (
-    <div className='text-white'>
-      <section className='  flex items-center justify-center '>
-        
-      <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+    
+    <div className="grid grid-flow-col gap-5 text-center auto-cols-max mb-2 ">
       <div className="flex flex-col">
         <span className="countdown font-mono text-4xl">
           <span style={{ "--value": days }}></span>
@@ -76,9 +67,12 @@ function Hero() {
       </div>
       
     </div>
-      </section>
-    </div>
-  )
-}
 
-export default Hero
+    
+    
+
+  );
+};
+
+
+export default Timers;

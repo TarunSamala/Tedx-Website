@@ -1,5 +1,9 @@
 'use client';
 import React, { useState } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+
+
 
 const Navbar = () => {
 
@@ -12,21 +16,28 @@ const Navbar = () => {
 
 
     return (
-        <nav className='bg-black'>
+        <nav className=' '>
             <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
                 <div className='flex items-center justify-between h-16'>
                     <div className='flex items-center'>
                         <div className='flex-shrink-0'>
-                            <a href = "/" className='text-white'>LOGO
-                            </a>
+                            
+                        <Link href='/' scroll={false}>
+                    <Image className="h-13 w-auto"
+                        src={"/../public/tedxvitap.png"}
+                        alt="TEDxVITAP Logo"
+                        height={100}
+                        width={100}/>
+                </Link>
+                            
                         </div>
                     </div>
                     <div className='hidden md:block'>
                         <div className='ml-4 flex items-center space-x-4'>
-                            <a href='/' className='text-white rounded-lg p-2'>About</a>
-                            <a href='/' className='text-white rounded-lg p-2'>Team</a>
-                            <a href='/' className='text-white rounded-lg p-2'>Timeline</a>
-                            <a href='/' className='text-white rounded-lg p-2'>Tickets</a>
+                            <a href='/' className='text-white rounded-lg p-2' scroll={false}>About</a>
+                            <a href='/' className='text-white rounded-lg p-2'scroll={false} >Team</a>
+                            <a href='/' className='text-white rounded-lg p-2'scroll={false}>Timeline</a>
+                            <a href='/' className='text-white rounded-lg p-2'scroll={false}>Tickets</a>
                         </div>
                     </div>
                     <div className='md:hidden flex items-center'>
