@@ -12,3 +12,34 @@ body {
     
 }
 
+a{
+    position: relative;
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+    border-radius: 0.5rem;
+
+}
+
+a:after{
+    content: '';
+    position: absolute;
+    background-color: #EC1015;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+
+}
+
+a:hover{
+    color:white;
+}
+
+a:hover::after{
+    width: 100%;
+}
+

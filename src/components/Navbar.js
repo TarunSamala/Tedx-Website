@@ -23,10 +23,10 @@ const Navbar = () => {
                     </div>
                     <div className='hidden md:block'>
                         <div className='ml-4 flex items-center space-x-4'>
-                            <a href='/' className='text-gray-300 rounded-lg p-2  hover:text-white  '>About</a>
-                            <a href='/' className='text-gray-300 rounded-lg p-2  hover:text-white  '>Team</a>
-                            <a href='/' className='text-gray-300 rounded-lg p-2  hover:text-white  '>Timeline</a>
-                            <a href='/' className='text-gray-300 rounded-lg p-2  hover:text-white  '>Tickets</a>
+                            <a href='/' className='text-white rounded-lg p-2'>About</a>
+                            <a href='/' className='text-white rounded-lg p-2'>Team</a>
+                            <a href='/' className='text-white rounded-lg p-2'>Timeline</a>
+                            <a href='/' className='text-white rounded-lg p-2'>Tickets</a>
                         </div>
                     </div>
                     <div className='md:hidden flex items-center'>
@@ -64,11 +64,11 @@ const Navbar = () => {
             </div>
              {isClick && (
                 <div className='md:hidden'>
-                    <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 items-center justify-center'>
-                    <a href='/' className='text-gray-300 block rounded-lg p-2 hover:text-white'>About</a>
-                            <a href='/' className='text-gray-300 block rounded-lg p-2 hover:text-white'>Team</a>
-                            <a href='/' className='text-gray-300 block rounded-lg p-2 hover:text-white'>Timeline</a>
-                            <a href='/' className='text-gray-300 block rounded-lg p-2 hover:text-white'>Tickets</a>
+                    <div className='px-2 pt-2 pb-3 space-y-1 sm:px-3 '>
+                    <a href='/' className='text-white block rounded-lg p-2'>About</a>
+                            <a href='/' className='text-white block rounded-lg p-2'>Team</a>
+                            <a href='/' className='text-white block rounded-lg p-2'>Timeline</a>
+                            <a href='/' className='text-white block rounded-lg p-2'>Tickets</a>
                     </div>
                 </div>
              )}               
