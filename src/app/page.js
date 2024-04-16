@@ -2,9 +2,11 @@
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import react from 'react';
-import Speakers from '@/components/Speakers';
+import Speakers from '@/components/Speakers1';
 import Head from 'next/head';
+import About from '@/components/About';
 // import Timer from '@/components/Timer';
+import Speak from '@/components/Speak';
 
 
 export default function Home() {
@@ -19,6 +21,8 @@ export default function Home() {
       <Navbar />
       
       <Hero/>
+      <About/>
+      <Speak/>
     
       {/* <Timer/> */}
       {/* <Speakers/> */}
