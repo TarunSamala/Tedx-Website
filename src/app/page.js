@@ -22,7 +22,7 @@ export default function Home() {
       
       <Hero/>
       <About/>
-      <Speak/>
+      {/* <Speak/> */}
     
       {/* <Timer/> */}
       {/* <Speakers/> */}
