@@ -46,7 +46,7 @@ function Hero() {
 
 
   return (
-    <div className='text-white'>
+    <div className='text-white mt-96 pt-40'>
       <section className='  flex items-center justify-center '>
         
       <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
